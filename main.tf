@@ -45,8 +45,5 @@ resource "azurerm_storage_container" "velero" {
 
   lifecycle {
     prevent_destroy = true
-    ignore_changes = [
-      tags,
-    ]
   }
 }
